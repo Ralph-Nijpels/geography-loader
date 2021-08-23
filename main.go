@@ -6,7 +6,6 @@ package main
 // Files are retrieved from ourairports.com/data/xx.csv
 //
 // Note: it is written quite sloppily:
-// - file names and database connection are hard-coded
 // - error logging is not implemented
 
 import (
@@ -15,7 +14,7 @@ import (
 
 	application "github.com/ralph-nijpels/geography-application"
 	airports "github.com/ralph-nijpels/geography-airports"
-	countries "github.com/ralph-nijpels/geogrpahy-countries"
+	countries "github.com/ralph-nijpels/geography-countries"
 )
 
 func main() {
