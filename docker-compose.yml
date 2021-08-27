@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  mongo:
+    image: "mongo:latest"
+    container_name: "loader-mongo"
+    ports:
+      - "27017-27019:27017-27019"
+    volumes:
+      - "E:\\data\\mongo\\configdb:/data/configdb"
+      - "E:\\data\\mongo\\db:/data/db"
+  minio:
+    image: "minio/minio:latest"
+    container_name: "loader-minio"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes: 
+      - "E:\\data\\minio:/data"
+    command: "server /data --console-address :9001"
+  loader:
+    image: "geography-loader:v1"
+    container_name: "loader-main"
+    command: "/bin/bash"
