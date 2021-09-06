@@ -7,10 +7,10 @@
         "frequencies-url": "https://ourairports.com/data/airport-frequencies.csv" 
     },
     "storage": {
-        "server": "loader-minio:9000",
+        "server": "localhost:9000",
         "key": "minioadmin",
         "secret": "minioadmin"
     },
-    "database": "mongodb://loader-mongo:27017",
+    "database": "mongodb://geography-mongo:KpR745tLgS8cyGyn5U3iuyOHM4FNNzVwXU6R5wKxNutHKDnyps5V5Ffn6UgeJxauzoUtxGFnkuumAdU70mtpGA==@geography-mongo.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@geography-mongo@",
     "max-results": 512
 }
